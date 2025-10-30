@@ -1,0 +1,125 @@
+/* ============================
+   LAYOUT.CSS — Estrutura e Responsividade
+   ============================ */
+
+/* Estrutura principal */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Cabeçalho e menu */
+.topo {
+  background: var(--branco);
+  box-shadow: var(--shadow-sm);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) var(--space-4);
+}
+
+.menu ul {
+  display: flex;
+  gap: var(--space-3);
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--cinza-escuro);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  color: var(--laranja);
+}
+
+/* Menu responsivo (hambúrguer via checkbox hack) */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background: var(--branco);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: var(--shadow-md);
+  }
+  input[type="checkbox"]:checked ~ ul {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: var(--font-xl);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.texto-banner {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: var(--branco);
+}
+
+/* Seções */
+section {
+  padding: var(--space-5) var(--space-4);
+  text-align: center;
+  background-color: var(--cinza-claro);
+}
+
+footer {
+  background: var(--cinza-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: var(--space-2);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {
+  .banner {
+    height: 60vh;
+  }
+}
+@media (max-width: 576px) {
+  .texto-banner h1 {
+    font-size: var(--font-lg);
+  }
+}
+@media (max-width: 400px) {
+  .banner {
+    height: 50vh;
+  }
+}

@@ -1,0 +1,129 @@
+/* ============================
+   COMPONENTS.CSS — Componentes de Interface
+   ============================ */
+
+/* Botões */
+.btn {
+  background-color: var(--verde);
+  color: var(--branco) !important;
+  border: none;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: var(--laranja);
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.cards article {
+  background: var(--branco);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cards article:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Formulário */
+form {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--branco);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: var(--space-2);
+  margin-bottom: var(--space-3);
+  border: 1px solid #ccc;
+  border-radius: var(--radius-sm);
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: var(--laranja);
+  box-shadow: 0 0 3px rgba(245, 166, 35, 0.4);
+}
+
+/* Alerts */
+.alert {
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  margin: var(--space-2) 0;
+}
+
+.alert-success {
+  background-color: #e6f4ea;
+  border-left: 4px solid var(--verde);
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border-left: 4px solid var(--amarelo);
+}
+
+.alert-error {
+  background-color: #fdecea;
+  border-left: 4px solid var(--vermelho);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: var(--font-sm);
+  background: var(--laranja);
+  color: var(--branco);
+  border-radius: var(--radius-sm);
+  margin-left: var(--space-1);
+}
+
+/* Modais (estrutura inicial, JS na Entrega III) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--branco);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  max-width: 500px;
+  text-align: center;
+}

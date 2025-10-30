@@ -1,0 +1,60 @@
+/* ============================
+   BASE.CSS — Design System e Reset
+   ============================ */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis globais (Design System) */
+:root {
+  /* Paleta de Cores */
+  --verde-escuro: #1b5e20;
+  --verde: #2e8b57;
+  --verde-claro: #a5d6a7;
+  --laranja: #f5a623;
+  --amarelo: #fdd835;
+  --azul: #2196f3;
+  --vermelho: #d32f2f;
+  --cinza-escuro: #333;
+  --cinza-claro: #f5f5f5;
+  --branco: #fff;
+  --preto: #000;
+
+  /* Tipografia */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.5rem;
+  --font-xl: 2rem;
+  --font-xxl: 3rem;
+
+  /* Sistema de espaçamento modular */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  /* Sombra e bordas */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.15);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--cinza-escuro);
+  background-color: var(--cinza-claro);
+  line-height: 1.6;
+}

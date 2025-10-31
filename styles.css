@@ -25,22 +25,47 @@ a:hover {
   outline-offset: 4px;
 }
 
-.alto-contraste {
+.alto-contraste,
+.alto-contraste * {
   background-color: #000 !important;
   color: #fff !important;
+  border-color: #fff !important;
 }
 
 .alto-contraste a,
-.alto-contraste button {
-  color: #ff0 !important;
-}
-
-.alto-contraste header,
-.alto-contraste footer {
-  background-color: #111 !important;
-}
-
+.alto-contraste a:visited,
+.alto-contraste button,
 .alto-contraste .btn {
   background-color: #fff !important;
   color: #000 !important;
+  border: 2px solid #fff !important;
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste nav {
+  background-color: #111 !important;
+}
+
+.alto-contraste .card,
+.alto-contraste section,
+.alto-contraste main {
+  background-color: #000 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste h3,
+.alto-contraste h4,
+.alto-contraste h5,
+.alto-contraste h6 {
+  color: #ff0 !important;
+}
+
+.alto-contraste #toggle-contrast {
+  background-color: #000 !important;
+  color: #ff0 !important;
+  border: 2px solid #ff0 !important;
 }

@@ -1,0 +1,6 @@
+=== HISTÓRICO DE COMMITS ===
+Entrega I — Estrutura HTML5
+Entrega II — Estilização e Layout (CSS)
+Entrega III — Interatividade (JavaScript)
+Entrega IV — Acessibilidade, Versionamento e Deploy
+==============================

@@ -1,5 +1,3 @@
-console.log("main.js carregado com sucesso!");
-
 // ============================
 // MAIN.JS — Ponto de Entrada Principal
 // ============================

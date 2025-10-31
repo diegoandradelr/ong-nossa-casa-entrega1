@@ -19,3 +19,28 @@ a {
 a:hover {
   opacity: 0.8;
 }
+
+:focus {
+  outline: 3px solid orange;
+  outline-offset: 4px;
+}
+
+.alto-contraste {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.alto-contraste a,
+.alto-contraste button {
+  color: #ff0 !important;
+}
+
+.alto-contraste header,
+.alto-contraste footer {
+  background-color: #111 !important;
+}
+
+.alto-contraste .btn {
+  background-color: #fff !important;
+  color: #000 !important;
+}
